@@ -13,10 +13,10 @@
 
     - name: Cloning GCE Apps
       git:
-        repo: 'https://github.com/MHA-Team/Apps-GCE'
+        repo: 'https://github.com/eidanyosoy/Apps-GCE'
         dest: /opt/coreapps
         version: 'master'
         force: yes
 
-    - name: Set Permission and Owner 
+    - name: Set Permission and Owner
       shell: 'chown -R 1000:1000 /opt/coreapps && chmod -R 775 /opt/coreapps'
